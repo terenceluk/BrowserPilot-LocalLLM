@@ -1,0 +1,37 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Backup files
+app_backup.py
+*_backup.py
+
+# Runtime-generated files
+task_history.json
+scheduled_tasks.json
+activity_logs/
+exports/
+
+# Environment variables
+.env
+*.env
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Blog Post
+blog-post.md

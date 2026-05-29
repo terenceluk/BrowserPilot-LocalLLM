@@ -1,0 +1,4 @@
+browser-use
+langchain-openai
+gradio>=4.0
+playwright
