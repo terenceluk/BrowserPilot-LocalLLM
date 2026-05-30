@@ -1,4 +1,4 @@
-"""Gradio-based Chat UI for the LM Studio Browser Agent."""
+"""Gradio-based Chat UI for the LM Studio Browser Pilot."""
 
 from __future__ import annotations
 
@@ -1566,7 +1566,7 @@ def create_ui():
     _retarget_pending_tasks(cfg.LM_STUDIO_BASE_URL, cfg.MODEL_NAME, MAX_STEPS)
     history_button_items = _history_button_items()
 
-    with gr.Blocks(title="Browser Agent - LM Studio", css=CSS, js=JS) as app:
+    with gr.Blocks(title="Browser Pilot - LM Studio", css=CSS, js=JS) as app:
         last_task_state = gr.State("")
         last_result_state = gr.State("")
         last_tabs_state = gr.State([])
@@ -1581,7 +1581,7 @@ def create_ui():
                                         <h1 style='font-size:1.6rem;font-weight:800;margin:0 0 4px 0;letter-spacing:-0.02em;
                                                              background:linear-gradient(90deg,var(--app-accent),var(--app-accent2));
                                                              -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;'>
-                                            Browser Agent
+                                            Browser Pilot
                                         </h1>
                                         <p style='margin:0;font-size:0.82rem;color:var(--app-subtext);'>
                                             Local browser automation with LM Studio, live step tracking, queueing, scheduling, saved history, and reusable exports.
@@ -2336,7 +2336,7 @@ def create_ui():
 if __name__ == "__main__":
     app = create_ui()
     server_port = _find_available_port()
-    print(f"Starting Browser Agent on http://127.0.0.1:{server_port}")
+    print(f"Starting Browser Pilot on http://127.0.0.1:{server_port}")
     app.launch(
         server_name="127.0.0.1",
         server_port=server_port,

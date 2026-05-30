@@ -1,4 +1,4 @@
-# 🌐 Browser Agent — LM Studio
+# 🌐 Browser Pilot — LM Studio
 
 Control Chrome with natural language using a local LLM from LM Studio.
 
